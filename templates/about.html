@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>About - Open Manus App</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block title %}About - Open Manus App{% endblock %}
+
+{% block content %}
     <h1>About This App</h1>
-    <p>This is a simple Flask project where you’re learning how to build web pages with Python, HTML, and CSS.</p>
-    <p>It’s your first step into web development with Flask!</p>
-    <a href="{{ url_for('home') }}">Back to Home</a>
-</body>
-</html>
+    <p>This is a simple Flask project where you're learning how to build web pages with Python, HTML, and CSS.</p>
+{% endblock %}

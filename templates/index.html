@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Open Manus App</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block title %}Home - Open Manus App{% endblock %}
+
+{% block content %}
     <h1>Hello Open Manus!</h1>
     <p>Welcome to your first Flask webpage with CSS styling.</p>
-</body>
-</html>
+{% endblock %}
